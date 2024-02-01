@@ -128,7 +128,7 @@
         class="title-container d-flex justify-content-center justify-content-lg-end position-relative"
       >
         <div
-          class="h-100 d-flex flex-column py-5 pt-lg-5 px-3 px-md-5 align-items-center align-items-lg-start"
+          class="h-100 d-flex bg-blur-grey flex-column py-5 pt-lg-5 px-3 px-md-5 align-items-center align-items-lg-start"
         >
           <h1 class="titleA display-1 text-uppercase font-weight-bold">
             Explore
@@ -148,8 +148,8 @@
       </div>
     </section>
 
-    <section id="best-sellers" class="d-flex position-relative">
-      <div class="m-5 d-flex position-absolute">
+    <section id="best-sellers" class="d-flex position-relative z-2">
+      <div class="m-5 d-flex position-absolute z-2">
         <div class="bar-title"></div>
         <div>
           <h3 class="color-green font-weight-bold">BEST SELLERS</h3>
@@ -157,7 +157,7 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center z-2">
         <div class="col-2"></div>
         <div class="col-2 p-0 border-right border-left">
           <div class="space-smaller-best-sellers"></div>
@@ -249,7 +249,7 @@
         <div class="col-2"></div>
       </div>
 
-      <div class="d-flex container-button position-absolute m-5">
+      <div class="d-flex container-button position-absolute m-5 z-2">
         <button class="btn btn-secondary text-uppercase font-weight-bold">
           view more
         </button>
@@ -258,58 +258,72 @@
 
     <section
       id="about-us"
-      class="min-h-section d-flex align-items-center justify-content-center"
+      class="min-h-section d-flex align-items-center justify-content-center z-2 flex-column flex-lg-row pt-4 pt-lg-0"
     >
-      <h1 class="about-us-title-vertical">adventure</h1>
-      <div class="about-us-container d-flex align-items-center mb-5">
-        <div class="pictures-container">
-          <div class="pic1">
-            <img src="/assets/img/ABOUT US 3.jpg" width="90" alt="" />
-          </div>
-          <div class="pic2">
-            <img src="/assets/img/ABOUT US 4.jpg" width="280" alt="" />
-          </div>
-          <div class="pic3">
-            <img src="/assets/img/ABOUT US 1.jpg" width="130" alt="" />
-          </div>
-          <div class="pic4">
-            <img
-              src="/assets/img/ABOUT US 2.jpg"
-              width="130"
-              height="180"
-              alt=""
-            />
-          </div>
-        </div>
+      <h1
+        class="about-us-title-vertical font-weight-bold display-1 z-2 text-uppercase"
+      >
+        adventure
+      </h1>
+      <div class="container z-2 my-sm-5">
+        <div class="row justify-content-center justify-content-lg-left">
+          <div
+            class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-0 mb-5 mb-lg-0"
+          >
+            <div class="position-relative img-best-sellers-box mb-5 mb-lg-0">
+              <img src="/assets/img/ABOUT US 4.jpg" class="img frame" alt="" />
 
-        <div class="content-about-us">
-          <div class="title-container-about-us">
-            <div class="box-border">
-              <div class="m-5 d-flex">
-                <div class="bar-title"></div>
-                <div>
-                  <h3 class="color-green font-weight-bold text-uppercase">
-                    about us
-                  </h3>
-                  <h3 class="font-weight-bold text-white text-uppercase">
-                    what do we do
-                  </h3>
+              <div class="position-absolute pic-2-about-us">
+                <img src="/assets/img/ABOUT US 3.jpg" width="70" alt="" />
+              </div>
+              <div class="position-absolute pic-3-about-us">
+                <img src="/assets/img/ABOUT US 1.jpg" width="120" alt="" />
+              </div>
+              <div class="position-absolute pic-4-about-us">
+                <img
+                  src="/assets/img/ABOUT US 2.jpg"
+                  width="120"
+                  height="160"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-lg-6 d-flex p-0 my-5">
+            <div class="bg-blur-grey p-3">
+              <div class="about-us-content">
+                <div class="m-3 m-lg-5 d-flex">
+                  <div class="bar-title"></div>
+                  <div>
+                    <h3 class="color-green font-weight-bold text-uppercase">
+                      about us
+                    </h3>
+                    <h3 class="font-weight-bold text-white text-uppercase">
+                      what do we do
+                    </h3>
+                  </div>
+                </div>
+                <p class="m-3 m-lg-5 h5 text-center text-white">
+                  Our company seeks to be a recognized Travel Agency in our
+                  region, for the trust and security that we offer our clients,
+                  presenting innovative services and ensuring a stable tourist
+                  activity, promoting an environment of good relations and
+                  obtaining the greatest satisfaction from our clients. .
+                </p>
+
+                <div
+                  class="d-flex justify-content-center justify-content-md-end my-4 my-lg-5 mr-lg-5"
+                >
+                  <button
+                    class="btn btn-small btn-primary btn-right text-uppercase font-weight-bold"
+                  >
+                    read more
+                  </button>
                 </div>
               </div>
-              <p class="m-5 about-us-desc text-white">
-                Our company seeks to be a recognized Travel Agency in our
-                region, for the trust and security that we offer our clients,
-                presenting innovative services and ensuring a stable tourist
-                activity, promoting an environment of good relations and
-                obtaining the greatest satisfaction from our clients. .
-              </p>
-              <div class="vertical-bar position-absolute"></div>
-              <button
-                class="btn btn-small btn-primary btn-right text-uppercase font-weight-bold position-absolute"
-              >
-                read more
-              </button>
             </div>
+            <div><div class="vertical-bar"></div></div>
           </div>
         </div>
       </div>

@@ -54,11 +54,12 @@ img {
 }
 
 .title-container > div:first-child {
-  background-color: #ffffff73;
-  backdrop-filter: blur(5px);
   width: 100%;
 }
-
+.bg-blur-grey {
+  background-color: #ffffff73;
+  backdrop-filter: blur(5px);
+}
 .btn {
   width: 11.8rem;
   height: 2.5rem;
@@ -99,23 +100,10 @@ img {
   height: 30.5%;
 }
 
-.img-best-sellers {
-  height: 42.2%;
+.img {
+  object-fit: contain;
 }
 
-#best-sellers .container-button {
-  bottom: 0rem;
-}
-.color-green {
-  color: #04541f;
-}
-
-.title-gray {
-  color: #6c6c6c;
-}
-.color-gray-light {
-  color: #a5a3a3;
-}
 #hero {
   background: url("../assets/img/HERO.jpg") center center no-repeat;
   background-size: cover;
@@ -138,77 +126,12 @@ img {
   height: 1.5rem;
   background-color: white;
 }
-.inset {
-  inset: 0;
-}
-
-.column {
-  height: 18%;
-  border-left: 1px solid #e6e4e4dc;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.column-lg {
-  height: 30%;
-  border-left: 1px solid #e6e4e4dc;
-}
-
-.last-column {
-  height: 17%;
-  border-right: 1px solid #e6e4e4dc;
-}
-
-/* ////// */
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .titleB {
-    left: -10rem;
-    text-wrap: nowrap;
-  }
-
-  .title-container .btn {
-    left: -10rem;
-  }
-
-  .title-container {
-    margin-left: 13rem;
-    margin-right: 3rem;
-    width: 100%;
-  }
-
-  .title-container > div:first-child {
-    max-width: 32rem;
-    max-height: 32rem;
-    flex: 1;
-  }
-  .vertical-bar {
-    left: -0.8rem;
-    top: 0.4rem;
-    width: 3.7rem;
-    height: 24.5rem;
-    position: relative;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
 /* BEST SELLER STYLES */
 #best-sellers {
   background: url("../assets/img/BACKGROUND\ BEST\ SELLERS.png") center center
     no-repeat;
   position: relative;
   background-size: cover;
-  z-index: -2;
   min-height: 720px;
 }
 
@@ -218,12 +141,14 @@ img {
   position: absolute;
   inset: 0;
   background-color: #ffffffe6;
-  z-index: -1;
+  z-index: 1;
 }
 
-.box-border {
-  z-index: 3;
+.img-best-sellers-box {
+  width: 15.5rem;
+  height: 19.5rem;
 }
+
 .cart-a {
   right: 0;
   height: 2.5rem;
@@ -243,12 +168,10 @@ img {
 }
 
 /* ABOUT US STYLES */
-
 #about-us {
   background: url("../assets/img/ABOUT\ US.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -2;
 }
 
 #about-us::after {
@@ -260,89 +183,45 @@ img {
   left: 0;
   right: 0;
   background-color: #04541f67;
-}
-.about-us-container {
-  width: 100vw;
-  height: 100vh;
+  z-index: 1;
 }
 
-.about-us-title-vertical {
-  transform: rotate(-90deg);
-  font-weight: bold;
-  font-size: 6rem;
-  text-transform: uppercase;
-  color: #ffffff85;
-  z-index: 2;
-  position: absolute;
-  left: -14rem;
-}
-.pictures-container {
-  width: 50%;
-  height: 85%;
-  z-index: 3;
-  position: relative;
-  left: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pic1 {
+.pic-2-about-us {
+  top: 6%;
+  left: -16%;
   border: 3px solid white;
-  position: absolute;
-  left: 7rem;
-  top: 11rem;
 }
-.pic2 {
+
+.pic-3-about-us {
+  bottom: -23%;
+  right: -16%;
+  border: 5px solid white;
+}
+.pic-4-about-us {
+  bottom: -35%;
+  left: -16%;
   border: 8px solid white;
 }
-.pic3 {
-  border: 5px solid white;
-  position: absolute;
-  right: 7rem;
-  bottom: 3rem;
+.frame {
+  border: 8px solid white;
 }
-.pic4 {
-  border: 7px solid white;
-  position: absolute;
-  bottom: 0rem;
-  left: 7rem;
-}
-.content-about-us {
-  width: 50%;
+.about-us-content {
   height: 100%;
+  width: 100%;
+  border: 0.3rem solid white;
 }
-.subtitle-about-us {
-  color: white;
-}
-.title-container-about-us {
-  width: 35%;
-  height: 75%;
-  background-color: #ffffff73;
-  backdrop-filter: blur(5px);
-  position: absolute;
-  right: 7rem;
-  top: 7rem;
-  z-index: 3;
-}
-.box-border {
-  width: 94%;
-  height: 93%;
-  border: 3px solid white;
-  margin: 1rem;
+.about-us-title-vertical {
+  transform: rotate(0deg);
+  color: #ffffff85;
 }
 
-.about-us-desc {
-  font-size: 1.1rem;
-  text-align: center;
-}
-.btn-about-us {
-  font-size: 1.2rem;
-  color: white;
-  background-color: #04541f;
-  position: absolute;
-  right: 3rem;
-  bottom: 7rem;
-}
+/*  */
+/*  */
+/*  */
+/* Encima de este comentario estan los estilos corregidos para first mobile  */
+/*  */
+/*  */
+/*  */
 
 /* PACKAGE STYLES */
 #package {
@@ -372,56 +251,74 @@ img {
   margin-top: 24rem;
 }
 
-/* @media (max-width: 1200px) {
-  .bar {
-    display: none;
-  }
-  .titleA,
-  .titleB {
-    font-size: 4.5rem;
-  }
-  .titleA {
-    padding-top: 7rem;
-  }
-  .titleB {
-    right: 10rem;
-    top: 22rem;
-  }
-  .vertical-bar {
-    right: 3.5rem;
-    height: 50%;
-  }
-  .title-container {
-    width: 50%;
-    height: 60%;
+.color-green {
+  color: #04541f;
+}
+
+.title-gray {
+  color: #6c6c6c;
+}
+.color-gray-light {
+  color: #a5a3a3;
+}
+
+/*  Tu desarrollas first desktop y tu lo escribes sin mediaquery es decir desde 0px and up */
+/*  */
+/* 0 - 575px */
+.clase {
+  color: green;
+}
+/* // Small devices (landscape phones, 576px and up) xs*/
+@media (min-width: 576px) {
+  .clase {
+    color: blue;
   }
 }
 
-@media (max-width: 750px) {
-  .titleA,
+/* // Medium devices (tablets, 768px and up) md */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) lg */
+@media (min-width: 992px) {
   .titleB {
-    font-size: 4rem;
+    left: -10rem;
+    text-wrap: nowrap;
   }
-  .titleB {
-    right: 7rem;
+
+  .title-container .btn {
+    left: -10rem;
+  }
+
+  .title-container {
+    margin-left: 13rem;
+    margin-right: 3rem;
+    width: 100%;
+  }
+
+  .title-container > div:first-child {
+    max-width: 32rem;
+    max-height: 32rem;
+    flex: 1;
   }
   .vertical-bar {
-    right: 4rem;
+    left: -0.8rem;
+    top: 0.4rem;
+    width: 3.7rem;
+    height: 24.5rem;
+    position: relative;
+  }
+
+  .about-us-title-vertical {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -14rem;
   }
 }
-@media (max-width: 576px) {
-  .titleA,
-  .titleB {
-    font-size: 2.5rem;
+
+/* Extra large devices (large desktops, 1200px and up) xl */
+@media (min-width: 1200px) {
+  .clase {
+    color: yellow;
   }
-  .titleA {
-    padding-top: 6rem;
-  }
-  .titleB {
-    right: 5rem;
-    top: 20rem;
-  }
-  .vertical-bar {
-    right: 4.5rem;
-  }
-} */
+}
