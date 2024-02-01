@@ -17,11 +17,12 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css//mytheme.min.css" />
   </head>
 
   <body>
-    <section id="hero">
+    <section id="hero" class="min-h-section d-flex align-items-center">
       <nav class="navbar navbar-expand-lg fixed-top ml-md-5 mr-md-4">
         <button
           class="navbar-toggler"
@@ -60,7 +61,7 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <div class="bar"></div>
+          <div class="bar mx-5"></div>
           <div class="ml-2 d-flex">
             <a
               href="mailto:info@email.com"
@@ -89,13 +90,13 @@
                 <i class="bi bi-telephone-fill"></i>
               </div>
             </a>
-            <div class="bar"></div>
-            <a>
+            <div class="bar mx-5"></div>
+            <a class="text-white">
               <div class="mr-3">
                 <i class="bi bi-search"></i>
               </div>
             </a>
-            <a>
+            <a class="text-white">
               <div>
                 <i class="bi bi-cart3"></i>
               </div>
@@ -103,39 +104,51 @@
           </div>
         </div>
       </nav>
-      <aside id="aside">
-        <div class="social-box">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            class="text-secondary"
-            ><i class="bi bi-facebook"></i
+
+      <aside
+        id="aside"
+        class="h-100 d-flex justify-content-end flex-column position-absolute pb-4"
+      >
+        <div
+          class="d-flex flex-column justify-content-center align-items-center mb-5"
+        >
+          <a href="https://www.facebook.com" target="_blank" class="m-3"
+            ><i class="bi bi-facebook text-primary"></i
           ></a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            class="text-secondary"
-            ><i class="bi bi-instagram"></i
+          <a href="https://www.instagram.com" target="_blank" class="m-3"
+            ><i class="bi bi-instagram text-primary"></i
           ></a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            class="text-secondary"
-            ><i class="bi bi-youtube"></i
+          <a href="https://www.youtube.com" target="_blank" class="m-3"
+            ><i class="bi bi-youtube text-primary"></i
           ></a>
         </div>
 
-        <p class="text-vertical">Follow Us</p>
+        <p class="text-vertical font-weight-bold text-primary text-nowrap mt-5">
+          Follow Us
+        </p>
       </aside>
-      <div class="title-container">
-        <h1 class="titleA">Explore</h1>
+
+      <div class="title-container d-flex justify-content-end w-100">
+        <div class="w-50 h-100 d-flex flex-column pt-5 px-5">
+          <h1 class="titleA display-1 text-uppercase font-weight-bold">
+            Explore
+          </h1>
+          <h1
+            class="titleB position-relative text-nowrap display-1 text-uppercase font-weight-bold text-white mb-5"
+          >
+            the world
+          </h1>
+          <button
+            class="btn btn-lg btn-secondary text-uppercase font-weight-bold position-relative"
+          >
+            get now
+          </button>
+        </div>
+        <div class="vertical-bar position-relative"></div>
       </div>
-      <button type="button" class="btn">GET NOW</button>
-      <div class="vertical-bar"></div>
-      <h1 class="titleB">the world</h1>
     </section>
 
-    <section id="best-sellers">
+    <section id="best-sellers" class="min-h-section">
       <div class="header-best-seller m-5 d-flex position-absolute">
         <div class="bar-best-seller"></div>
         <div>
@@ -145,102 +158,109 @@
       </div>
 
       <div class="container d-flex justify-content-center">
-          <div class="col p-0">
-            <div class="column"></div>
-            <div class="position-relative">
-              <a class="cart-a">
-                  <i class="bi bi-l bi-cart3 m-3"></i>
-              </a> 
-              <div class="product-price">$100</div>
-              <img src="/assets/img/PRODUCTO 1.jpg" alt="" />
-            </div>
-              <div class="b-column column">Spain</div>
+        <div class="col p-0">
+          <div class="column"></div>
+          <div class="position-relative">
+            <a class="cart-a">
+              <i class="bi bi-l bi-cart3 m-3"></i>
+            </a>
+            <div class="product-price">$100</div>
+            <img src="/assets/img/PRODUCTO 1.jpg" alt="" />
           </div>
+          <div class="b-column column">Spain</div>
+        </div>
 
-          <div class="col p-0">
-            <div class="last-column column"></div>
-            <div class="position-relative">
-              <a class="cart-a">
-                  <i class="bi bi-l bi-cart3 m-3"></i>
-              </a> 
-              <div class="product-price">$100</div>
-              <img src="/assets/img/PRODUCTO 2.jpg" class="" alt="" />
-            </div>
-            <div class="b-column column">Greece</div>
+        <div class="col p-0">
+          <div class="last-column column"></div>
+          <div class="position-relative">
+            <a class="cart-a">
+              <i class="bi bi-l bi-cart3 m-3"></i>
+            </a>
+            <div class="product-price">$100</div>
+            <img src="/assets/img/PRODUCTO 2.jpg" class="" alt="" />
           </div>
+          <div class="b-column column">Greece</div>
+        </div>
 
-          <div class="col p-0">
-            <div class="column"></div>
-            <div class="position-relative">
-              <a class="cart-a">
-                  <i class="bi bi-l bi-cart3 m-3"></i>
-              </a> 
-              <div class="product-price">$100</div>
-              <img src="/assets/img/PRODUCTO 3.jpg" alt="" />
-              
-            </div>
-             <div class="b-column last-column column">Mexico</div> 
+        <div class="col p-0">
+          <div class="column"></div>
+          <div class="position-relative">
+            <a class="cart-a">
+              <i class="bi bi-l bi-cart3 m-3"></i>
+            </a>
+            <div class="product-price">$100</div>
+            <img src="/assets/img/PRODUCTO 3.jpg" alt="" />
           </div>
+          <div class="b-column last-column column">Mexico</div>
+        </div>
 
-          <div class="col p-0">
-            <div class="last-column column"></div>
-            <div class="position-relative">
-              <a class="cart-a">
-                  <i class="bi bi-l bi-cart3 m-3"></i>
-              </a> 
-              <div class="product-price">$100</div>
-              <img src="/assets/img/PRODUCTO 4.jpg" alt="" />
-            </div>
-              <div class="last-column b-column">Brazil</div>
+        <div class="col p-0">
+          <div class="last-column column"></div>
+          <div class="position-relative">
+            <a class="cart-a">
+              <i class="bi bi-l bi-cart3 m-3"></i>
+            </a>
+            <div class="product-price">$100</div>
+            <img src="/assets/img/PRODUCTO 4.jpg" alt="" />
           </div>
-          <button type="button" class="btn btn-small">GET NOW</button>
+          <div class="last-column b-column">Brazil</div>
+        </div>
+        <button type="button" class="btn btn-small">GET NOW</button>
       </div>
-      
-   
     </section>
 
-    <section id="about-us">
+    <section id="about-us" class="min-h-section">
       <h1 class="about-us-title-vertical">adventure</h1>
-      <div class="d-flex justify-content-center align-items-center about-us-container">
-
-          <div class="pictures-container">
-            <div class="pic1">
-              <img src="/assets/img/ABOUT US 3.jpg" width="90"  alt="">
-            </div>
-            <div class="pic2">
-              <img src="/assets/img/ABOUT US 4.jpg" width="280" alt="">
-            </div>
-            <div class="pic3">
-              <img src="/assets/img/ABOUT US 1.jpg" width="130" alt="">
-            </div>
-            <div class="pic4">
-              <img src="/assets/img/ABOUT US 2.jpg" width="130" height="180" alt="">
-            </div>
+      <div
+        class="d-flex justify-content-center align-items-center about-us-container"
+      >
+        <div class="pictures-container">
+          <div class="pic1">
+            <img src="/assets/img/ABOUT US 3.jpg" width="90" alt="" />
           </div>
+          <div class="pic2">
+            <img src="/assets/img/ABOUT US 4.jpg" width="280" alt="" />
+          </div>
+          <div class="pic3">
+            <img src="/assets/img/ABOUT US 1.jpg" width="130" alt="" />
+          </div>
+          <div class="pic4">
+            <img
+              src="/assets/img/ABOUT US 2.jpg"
+              width="130"
+              height="180"
+              alt=""
+            />
+          </div>
+        </div>
 
-          <div class="content-about-us">
-            <div class="title-container-about-us">
-              <div class="box-border">  
-                <div class="d-flex mt-4 ml-4">
-                   <div class="bar-best-seller"></div>
-                    <div class="d-flex flex-column ml-3 d-flex position-absolute">
-                      <h3 class="title-best-seller">ABOUT US</h3>
-                      <h3 class="subtitle-about-us">WHAT DO WE DO</h3>
-                    </div>
+        <div class="content-about-us">
+          <div class="title-container-about-us">
+            <div class="box-border">
+              <div class="d-flex mt-4 ml-4">
+                <div class="bar-best-seller"></div>
+                <div class="d-flex flex-column ml-3 d-flex position-absolute">
+                  <h3 class="title-best-seller">ABOUT US</h3>
+                  <h3 class="subtitle-about-us">WHAT DO WE DO</h3>
                 </div>
-                <p class="m-5 about-us-desc">Our company seeks to be a recognized Travel Agency in our region, for the trust and security that we offer our clients, presenting innovative services and ensuring a stable tourist activity, promoting an environment of good relations and obtaining the greatest satisfaction from our clients. .</p>
-               <button type="button" class="btn btn-about-us">GET NOW</button>
               </div>
-             
-              <div class="vertical-bar-about-us"></div>
+              <p class="m-5 about-us-desc">
+                Our company seeks to be a recognized Travel Agency in our
+                region, for the trust and security that we offer our clients,
+                presenting innovative services and ensuring a stable tourist
+                activity, promoting an environment of good relations and
+                obtaining the greatest satisfaction from our clients. .
+              </p>
+              <button type="button" class="btn btn-about-us">GET NOW</button>
             </div>
+
+            <div class="vertical-bar-about-us"></div>
           </div>
-      
+        </div>
       </div>
-      
     </section>
 
-    <section id="package">
+    <section id="package" class="min-h-section">
       <div class="header-best-seller m-5 d-flex position-absolute">
         <div class="bar-best-seller"></div>
         <div>
@@ -250,14 +270,56 @@
       </div>
       <div class="container container-package">
         <div class="row">
-          <div class="col"><img src="/assets/img/CATEGORIA 1.jpg" width="250" height="350" alt=""></div>
-          <div class="col"><img src="/assets/img/CATEGORIA 2.jpg" width="250" height="350" alt=""></div>
-          <div class="col"><img src="/assets/img/CATEGORIA 3.jpg" width="250" height="350" alt=""></div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 1.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 2.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 3.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
         </div>
         <div class="row">
-          <div class="col"><img src="/assets/img/CATEGORIA 4.jpg" width="250" height="350" alt=""></div>
-          <div class="col"><img src="/assets/img/CATEGORIA 5.jpg" width="250" height="350" alt=""></div>
-          <div class="col"><img src="/assets/img/CATEGORIA 6.jpg" width="250" height="350" alt=""></div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 4.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 5.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/assets/img/CATEGORIA 6.jpg"
+              width="250"
+              height="350"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
