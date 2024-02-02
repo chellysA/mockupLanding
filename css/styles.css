@@ -9,7 +9,11 @@ body {
 .nav-link {
   color: white;
 }
-
+.img-filter {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.199);
+}
 img {
   max-width: 100%;
   max-height: 100%;
@@ -52,12 +56,20 @@ img {
   margin-top: 9rem;
   margin-bottom: 9rem;
 }
-
+.container-button {
+  bottom: 2rem;
+  left: 2rem;
+}
 .title-container > div:first-child {
   width: 100%;
 }
+
 .bg-blur-grey {
   background-color: #ffffff73;
+  backdrop-filter: blur(5px);
+}
+.bg-blur-grey-light {
+  background-color: #ffffff8f;
   backdrop-filter: blur(5px);
 }
 .btn {
@@ -72,10 +84,12 @@ img {
   width: 15.3rem;
   height: 3.1rem;
 }
+
 .btn-small {
   width: 10rem;
   height: 2.2rem;
 }
+
 .text-vertical {
   transform: rotate(-90deg);
   font-size: 1.1rem;
@@ -88,6 +102,16 @@ img {
     0deg,
     rgba(14, 170, 67, 0.5830707282913166) 38%,
     rgba(4, 84, 31, 0.9724264705882353) 100%
+  );
+  margin-right: 0.5rem;
+}
+.bar-title-white {
+  width: 0.3rem;
+  height: 5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.466) 30%,
+    rgba(248, 248, 248, 0.972) 100%
   );
   margin-right: 0.5rem;
 }
@@ -144,11 +168,14 @@ img {
   z-index: 1;
 }
 
-.img-best-sellers-box {
-  width: 15.5rem;
-  height: 19.5rem;
+.img-size {
+  width: 15rem;
+  height: 19rem;
 }
-
+.vertical-letter-position {
+  bottom: 1%;
+  left: -7%;
+}
 .cart-a {
   right: 0;
   height: 2.5rem;
@@ -214,43 +241,28 @@ img {
   transform: rotate(0deg);
   color: #ffffff85;
 }
-
-/*  */
-/*  */
-/*  */
-/* Encima de este comentario estan los estilos corregidos para first mobile  */
-/*  */
-/*  */
-/*  */
-
 /* PACKAGE STYLES */
 #package {
   background: url("../assets/img/BACKGROUND\ BEST\ SELLERS.png") center center
     no-repeat;
   background-size: cover;
-  height: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
   position: relative;
-  z-index: -1;
 }
 
 #package::after {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   background-color: #ffffffe6;
   z-index: 1;
 }
-.container-package {
-  margin-top: 24rem;
-}
 
+.package-title-vertical {
+  transform: rotate(0deg);
+  color: black;
+  margin-left: 2rem;
+}
 .color-green {
   color: #04541f;
 }
@@ -261,18 +273,114 @@ img {
 .color-gray-light {
   color: #a5a3a3;
 }
-
-/*  Tu desarrollas first desktop y tu lo escribes sin mediaquery es decir desde 0px and up */
-/*  */
-/* 0 - 575px */
-.clase {
-  color: green;
+.label-transparent {
+  top: 1rem;
+  right: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #5e5c5cf6;
 }
+
+/* PACKAGE STYLES */
+#package {
+  background: url("../assets/img/BACKGROUND\ BEST\ SELLERS.png") center center
+    no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#package::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: #ffffffe6;
+  z-index: 1;
+}
+
+.package-title-vertical {
+  transform: rotate(0deg);
+  color: black;
+  margin-left: 2rem;
+}
+.color-green {
+  color: #04541f;
+}
+
+.title-gray {
+  color: #6c6c6c;
+}
+.color-gray-light {
+  color: #a5a3a3;
+}
+.label-transparent {
+  top: 1rem;
+  right: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #5e5c5cf6;
+}
+
+/* TESTIMONIALS */
+.testimonials-img {
+  background: url("../assets/img/REVIEWS.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 290px;
+}
+.review {
+  background-color: #f3f3f3;
+}
+.vertical-bar-testimonials {
+  position: absolute;
+  width: 1.5rem;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(14, 170, 67, 0.5830707282913166) 38%,
+    rgba(4, 84, 31, 0.9724264705882353) 100%
+  );
+}
+.quote-position {
+  left: 9rem;
+  bottom: 8rem;
+}
+
+/* SUBSCRIBE */
+.subscribe-bg-left {
+  background: url("../assets/img/SUBSCRIBE.png") center center no-repeat;
+  background-size: cover;
+  min-height: 209px;
+}
+.subscribe-bg-right {
+  background: url("../assets/img/SUBSCRIBE.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 209px;
+}
+.img-filter-subscribe {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(243 243 243 / 72%) 58%,
+    rgb(243 243 243) 67%,
+    rgba(243, 243, 243, 0.14889705882352944) 95%
+  );
+}
+.center-form {
+  bottom: 4.5rem;
+  left: -4rem;
+}
+/*  */
+/*  */
+/*  */
+/* Encima de este comentario estan los estilos corregidos para first mobile  */
+/*  */
+/*  */
+/*  */
+
+/*  desarrollo first desktop y lo escribo sin mediaquery es decir desde 0px and up */
+/*  */
+
 /* // Small devices (landscape phones, 576px and up) xs*/
 @media (min-width: 576px) {
-  .clase {
-    color: blue;
-  }
 }
 
 /* // Medium devices (tablets, 768px and up) md */
@@ -313,6 +421,12 @@ img {
     transform: rotate(-90deg);
     position: absolute;
     left: -14rem;
+  }
+  .package-title-vertical {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -12rem;
+    bottom: 16rem;
   }
 }
 
